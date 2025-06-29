@@ -22,7 +22,7 @@
   .rec-label::before {
     content: "REC";
     position: absolute;
-    right: 22px;
+    right: 19px;
     color: var(--accent-color);
     font-family: var(--main-font);
     font-size: 18px;
