@@ -121,8 +121,9 @@ h2 {
   outline-offset: 4px;
 }
 
-.header__theme-menu-button:focus {
-  border: var(--accent-color);
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-block-end-color: rgb(var(--accent-color));
 }
 
 .title-decor {
@@ -157,10 +158,6 @@ main {
   margin-block-start: 0;
 }
 
-.content:first-child {
-  margin-block-start: 2.5rem;
-}
-
 .main__subtitle {
   font-weight: 700;
   font-size: 18px;
@@ -171,6 +168,16 @@ main {
 .content {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.content:first-child {
+  margin-block-start: 2.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .tips {
@@ -207,6 +214,10 @@ main {
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
   text-decoration-color: var(--text);
+}
+
+.link-decor:focus-visible {
+  outline: 1px solid var(--text);
 }
 
 .gallery__grid {
@@ -248,7 +259,7 @@ main {
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width >= 768px) {
   .header {
     padding: 20px;
   }
@@ -259,6 +270,21 @@ main {
 
   .header__subtitle {
     max-width: 491px;
+  }
+
+  .content__how-to-concetrate,
+  .content__concetrate-better {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .content__what-reduces-concentration 
+  .gallery__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .content__how-to-concetrate.grid-item,
+  .content__concetrate-better .grid-item {
+    grid-column: 2/3;
   }
 
   .main {
