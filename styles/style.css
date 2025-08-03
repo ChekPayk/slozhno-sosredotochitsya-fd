@@ -1,16 +1,13 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  position: relative;
   font-family: var(--main-font), sans-serif;
-  /* display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh; */
-  background-image: var(--bg__image, url(../images/cover-image-dark.png));
+  background-image: var(--background-image);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* box-sizing: border-box; */
 }
 
 .header {
@@ -45,8 +42,6 @@ h2 {
   line-height: 23.4px;
   letter-spacing: 0%;
 }
-
-
 
 .header__title {
   align-self: center;
@@ -90,6 +85,13 @@ h2 {
   left: 10px;
   border-inline-end: none;
   border-top: none;
+}
+
+.rec-label {
+  position: absolute;
+  color: var(--accent-color);
+  top: clamp(10px, 0.0286rem + 2.5445vw, 21px);
+  right: clamp(38px, 1.7786rem + 2.5445vw, 49px);
 }
 
 .header__theme-menu {
@@ -138,10 +140,6 @@ h2 {
   -webkit-box-decoration-break: clone;
 }
 
-/* .content__concetrate-better .grid-item h3 {
-  margin-block-end: 20px;
-} */
-
 main {
   display: grid;
   grid-template-columns: 1fr;
@@ -182,10 +180,6 @@ main {
   display: grid;
   /* grid-template-columns: 1fr; */
   gap: 20px;
-}
-
-.content:first-child {
-  margin-block-start: 2.5rem;
 }
 
 .card {
@@ -336,8 +330,28 @@ main {
     font-size: 9.8125rem;
   }
 
+  .header__theme-menu {
+    display: flex;
+    justify-content: center;
+    margin-block-start: 0;
+    margin-block-end: clamp(273px, 0.7292rem + 34.0278vh, 420px);
+  }
+
+   .header__theme-menu-list {
+    flex-direction: row;
+  }
+
   .content__how-to-concetrate .grid-item,
   .content__concetrate-better .grid-item {
     grid-column: 2/4;
+  }
+
+  .content__how-to-concetrate,
+  .content__concetrate-better {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .list__reduce{
+    grid-template-columns: repeat(3, 1fr);
   }
 }

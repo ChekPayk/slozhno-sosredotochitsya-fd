@@ -9,35 +9,45 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+  --background-image: url(../images/cover-image-dark.png);
+  --background: rgba(0, 0, 40, 1);
+  --title: rgba(219, 0, 255, 1);
+  --accent-color: rgba(255, 0, 112, 1);
+  --text: rgba(241, 178, 206, 1);
+  --main-font: IBM Plex Mono;
+  --paddings: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
-.theme-dark .page {
-  .rec-label {
-    position: absolute;
-    top: 10px;
-    right: 22px;
-    /* color: var(--accent-color); */
-  }
+.theme-dark .rec-label {
+  display: block;
+}
 
-  .rec-label::before {
-    content: "REC";
-    position: absolute;
-    right: 19px;
-    color: var(--accent-color);
-    font-family: var(--main-font);
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: uppercase;
-  }
+.rec-label {
+  position: absolute;
+  top: 10px;
+  right: 22px;
+  color: var(--accent-color);
+}
 
-  .rec-label::after {
-    content: "";
-    display: inline-block;
-    width: 9px;
-    height: 9px;
-    margin-left: 10px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    box-shadow: 0 0 4px 2px var(--accent-color);
-  }
+.rec-label::before {
+  content: "REC";
+  position: absolute;
+  right: 19px;
+  color: var(--accent-color);
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.rec-label::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
 }
