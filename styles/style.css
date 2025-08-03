@@ -46,6 +46,8 @@ h2 {
   letter-spacing: 0%;
 }
 
+
+
 .header__title {
   align-self: center;
   grid-area: title;
@@ -129,20 +131,23 @@ h2 {
 .title-decor {
   background-color: var(--accent-color);
   color: var(--background);
-  margin: 20px 0 10px 0;
+  margin-bottom: 10px;
   height: min-content;
   /* display: inline; */
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
 
+/* .content__concetrate-better .grid-item h3 {
+  margin-block-end: 20px;
+} */
+
 main {
   display: grid;
   grid-template-columns: 1fr;
   background-color: var(--background);
-  min-height: 5355px;
-  padding: 0 10px 0 10px;
   box-sizing: border-box;
+  padding: clamp(40px, 1.3073rem + 5.0891vw, 60px) var(--paddings);
   gap: clamp(50px, 1.3359rem + 7.6336vw, 80px);
 }
 
@@ -176,7 +181,7 @@ main {
 .content {
   display: grid;
   /* grid-template-columns: 1fr; */
-  
+  gap: 20px;
 }
 
 .content:first-child {
@@ -271,8 +276,8 @@ main {
   .h1 {
     font-size: clamp(7.5rem, 2.3125rem + 6.6406vw, 9.8125rem);
   }
-
-  .content__what-reduces-concentration .gallery__grid {
+  
+  .content__what-reduces-concentration.gallery__grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -280,25 +285,14 @@ main {
     grid-column: 1/4;
   }
 
-  .content__how-to-concetrate .card,
-  .content__concetrate-better .card {
-    grid-column: 2/3;
-  }
-
   .content__how-to-concetrate,
   .content__concetrate-better {
     grid-template-columns: 1fr 2fr;
   }
 
-  .main__subtitle,
-  .list__advice {
+  .content__how-to-concetrate .grid-item,
+  .content__concetrate-better .grid-item {
     grid-column: 2/3;
-  }
-
-  .main {
-    padding: 0 20px;
-    gap: 4rem;
-    /* min-height: 1024px; */
   }
 
   .gallery__image {
@@ -332,35 +326,18 @@ main {
     grid-row: 3/4;
   }
 
-  /* .gallery__grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  } */
-
-  /* .main__subtitle,
-  .text {
-    grid-column: 2;
-    margin: 10px 0 20px 0;
-  } */
-
-  /* .main__subtitle + .text {
-    margin-top: -15px;
-  } */
-
-  /* .title-decor {
-    grid-column: 2;
-    justify-self: start;
-    width: auto;
-    max-width: 100%;
-  } */
-
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .h1 {
     font-size: 9.8125rem;
+  }
+
+  .content__how-to-concetrate .grid-item,
+  .content__concetrate-better .grid-item {
+    grid-column: 2/4;
   }
 }
