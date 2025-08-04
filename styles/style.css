@@ -166,10 +166,9 @@ main {
   color: var(--h3);
 }
 
- .title-concetration {
-    max-width: 355px;
-  }
-
+.title-concetration {
+  max-width: 355px;
+}
 
 .list__reduce {
   display: grid;
@@ -337,6 +336,10 @@ main {
   .h1 {
     font-size: 9.8125rem;
   }
+
+  .title-concetration {
+  max-width: 315px;
+}
 
   .header__theme-menu {
     display: flex;
