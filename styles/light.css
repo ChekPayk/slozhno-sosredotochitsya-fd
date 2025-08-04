@@ -12,6 +12,8 @@
   --text: rgba(53, 52, 48, 1);
   --paddings: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   --h2: rgba(53, 52, 48, 1);
+  --h3: rgba(53, 52, 48, 1);
+  --h4: rgba(53, 52, 48, 1);
 }
 
 .theme-light .rec-label {
@@ -28,6 +30,7 @@
     --paddings: clamp(10px, 0.0286rem + 2.5445vw, 20px);
     --h2: rgba(53, 52, 48, 1);
     --h3: rgba(53, 52, 48, 1);
+    --h4: rgba(53, 52, 48, 1);
   }
 
   .rec-label {

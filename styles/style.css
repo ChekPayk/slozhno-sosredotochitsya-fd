@@ -182,6 +182,10 @@ main {
   gap: 20px;
 }
 
+.content__concetrate-better .grid-item h3 {
+  margin-block-end: 20px;
+}
+
 .content {
   display: grid;
   gap: 20px;
@@ -197,7 +201,7 @@ main {
   font-size: 18px;
   line-height: 23.4px;
   letter-spacing: 0%;
-  margin: 20px 0px 10px 0px;
+  color: var(--h4);
 }
 
 .text {
