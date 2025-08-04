@@ -11,6 +11,7 @@
   --accent-color: rgba(255, 141, 203, 1);
   --text: rgba(53, 52, 48, 1);
   --paddings: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  --h2: rgba(53, 52, 48, 1);
 }
 
 .theme-light .rec-label {
@@ -20,11 +21,13 @@
 @media (prefers-color-scheme: light) {
   :root {
     --background-image: url(../images/cover-image-light.png);
-    --background: url(../images/cover-image-light.png);
+    --background: rgba(53, 52, 48, 1);
     --title: rgba(255, 194, 230, 1);
     --accent-color: rgba(255, 141, 203, 1);
     --text: rgba(53, 52, 48, 1);
     --paddings: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+    --h2: rgba(53, 52, 48, 1);
+    --h3: rgba(53, 52, 48, 1);
   }
 
   .rec-label {
