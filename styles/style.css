@@ -150,7 +150,7 @@
   -webkit-box-decoration-break: clone;
 }
 
-.header__subtitle:first-child {
+.accent-background__title {
   margin-bottom: 0;
 }
 
@@ -203,7 +203,12 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+}
+
+.main__section-paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .main__section-text {
