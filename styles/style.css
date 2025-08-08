@@ -150,6 +150,10 @@
   -webkit-box-decoration-break: clone;
 }
 
+.header__subtitle:first-child {
+  margin-bottom: 0;
+}
+
 .main {
   display: grid;
   grid-template-columns: 1fr;
