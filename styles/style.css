@@ -61,22 +61,21 @@
   height: 25px;
   border: 1px solid var(--header-decorate-color);
   box-sizing: border-box;
-  z-index: 1;
   position: absolute;
 }
 
 /* Правый верхний угол */
 .decorated-zone::before {
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
   border-left: none;
   border-bottom: none;
 }
 
 /* Левый нижний угол */
 .decorated-zone::after {
-  bottom: var(--paddings);
-  left: var(--paddings);
+  bottom: 10px;
+  left: 10px;
   border-inline-end: none;
   border-top: none;
 }
@@ -84,8 +83,30 @@
 .rec-label {
   position: absolute;
   color: var(--accent-color);
-  top: clamp(10px, 0.0286rem + 2.5445vw, 21px);
-  right: clamp(38px, 1.7786rem + 2.5445vw, 49px);
+  top: 10px;
+  right: 22px;
+}
+
+.rec-label::before {
+  content: "REC";
+  position: absolute;
+  right: 19px;
+  color: var(--accent-color);
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.rec-label::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
 .header__theme-menu {
@@ -98,7 +119,6 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding-right: 10px;
   list-style: none;
   grid-column: 2;
 }
@@ -196,13 +216,6 @@
   font-weight: 400;
 }
 
-/* .decor {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
-  text-shadow: 2px 1px 0px var(--accent-color);
-} */
-
 .main__section-link-decor {
   text-decoration: none;
   cursor: pointer;
@@ -252,6 +265,16 @@
 @media (width >= 768px) {
   :root {
     --header__title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  }
+
+  .rec-label {
+    top: 20px;
+    right: 32px;
   }
 
   .title-concetration {
