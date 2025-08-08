@@ -15,11 +15,9 @@
   --title: rgba(219, 0, 255, 1);
   --accent-color: rgba(255, 0, 112, 1);
   --text: rgba(241, 178, 206, 1);
-  --main-font: IBM Plex Mono;
-  --paddings: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  --h2: rgba(255, 0, 112, 1);
-  --h3: rgba(0, 0, 40, 1);
-  --h4: rgba(0, 0, 40, 1);
+  --subtitle: rgba(255, 0, 112, 1);
+  --tips: rgba(0, 0, 40, 1);
+  --header-decorate-color: rgba(255, 0, 112, 1);
 }
 
 .theme-dark .rec-label {
@@ -28,8 +26,8 @@
 
 .rec-label {
   position: absolute;
-  top: 10px;
-  right: 22px;
+  top: 20px;
+  right: 32px;
   color: var(--accent-color);
 }
 
