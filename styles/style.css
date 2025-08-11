@@ -1,5 +1,3 @@
-
-
 .page {
   position: relative;
   font-family: var(--main-font, sans-serif);
@@ -18,7 +16,7 @@
     "menu"
     "title"
     "subtitle";
-  padding: var(--paddings);
+  padding: var(--padding-grouth);
   justify-items: end;
   align-items: center;
   block-size: 100vh;
@@ -28,7 +26,7 @@
 .header__title {
   color: var(--title);
   font-weight: 700;
-  font-size: var(--header__title-size);
+  font-size: var(--header-title-size);
   line-height: 83%;
   text-transform: lowercase;
   text-shadow: 4px 4px 0px var(--accent-color);
@@ -37,7 +35,7 @@
   grid-area: title;
   justify-self: start;
   margin-right: auto;
-  margin-inline-start: calc(20px - (2 * var(--paddings)));
+  margin-inline-start: calc(20px - (2 * var(--padding-grouth)));
 }
 
 .header__subtitle {
@@ -48,7 +46,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  color: var(--subtitle);
+  color: var(--section-title);
 }
 
 .decorated-zone {
@@ -61,7 +59,7 @@
   width: 25px;
   height: 25px;
   border: 1px solid var(--header-decorate-color);
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   position: absolute;
 }
 
@@ -125,23 +123,35 @@
 }
 
 .header__theme-menu-button {
-  padding: 1px 12px 1px 12px;
+  margin-top: 1px;
   border: 1px solid transparent;
   font-size: 18px;
   color: var(--header-decorate-color);
   background-color: transparent;
   cursor: pointer;
   text-transform: lowercase;
+  font-weight: 400;
+  font-style: Regular;
+  line-height: 18px;
+  text-align: center;
+  text-transform: lowercase;
+  block-size: 28px;
+  inline-size: 70px;
 }
 
 .header__theme-menu-button:hover {
   cursor: pointer;
-  outline: 1px solid var(--header-decorate-color);
+  border: 1px solid var(--header-theme-menu-hover-color);
 }
 
 .header__theme-menu-button:focus-visible {
   outline: none;
   border-block-end-color: rgb(var(--header-decorate-color));
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--header-theme-menu-color);
 }
 
 .accent-background {
@@ -161,20 +171,18 @@
   display: grid;
   grid-template-columns: 1fr;
   box-sizing: border-box;
-  padding: clamp(40px, 1.3073rem + 5.0891vw, 60px) var(--paddings);
+  padding: clamp(40px, 1.3073rem + 5.0891vw, 60px) var(--padding-grouth);
   gap: clamp(50px, 1.3359rem + 7.6336vw, 80px);
 }
 
-.main__title {
-  color: var(--subtitle);
-  font-weight: 700;
+.section-title {
+  color: var(--section-title);
   font-size: 18px;
   line-height: 23.4px;
   margin-block-start: 0;
 }
 
-.main__subtitle {
-  font-weight: 700;
+.section-text {
   font-size: 18px;
   line-height: 23.4px;
 }
@@ -214,16 +222,20 @@
   gap: 4px;
 }
 
-.main__section-text {
-  color: var(--text);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23.4px;
+.heading-bold {
+  font-weight: 700;
 }
 
-.main__section-text-tips {
-  color: var(--tips);
+.heading-regular {
   font-weight: 400;
+}
+
+.color-content {
+  color: var(--content-color);
+}
+
+.advice__title_color-tips {
+  color: var(--tips-bg-color);
 }
 
 .main__section-link-decor {
@@ -233,16 +245,16 @@
 }
 
 .main__section-link-decor:hover {
-  border-bottom: 1px solid var(--text);
+  border-bottom: 1px solid var(--content-color);
 }
 
 .main__section-link-decor:focus-visible {
-  outline: 1px solid var(--text);
+  outline: 1px solid var(--content-color);
 }
 
 .gallery__grid {
-  margin-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  gap: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  margin-block-start: var(--padding-grouth);
+  gap: var(--padding-grouth);
 }
 
 .gallery__image {
@@ -261,7 +273,7 @@
 .footer__title {
   color: var(--title);
   font-weight: 700;
-  font-size: var(--header__title-size);
+  font-size: var(--header-title-size);
   line-height: 83%;
   text-transform: lowercase;
   text-shadow: 4px 4px 0px var(--accent-color);
@@ -274,12 +286,17 @@
 
 @media (width >= 768px) {
   :root {
-    --header__title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --header-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .decorated-zone::before {
     top: 20px;
     right: 20px;
+  }
+
+  .decorated-zone::after {
+    bottom: 20px;
+    left: 20px;
   }
 
   .rec-label {
@@ -345,7 +362,7 @@
   }
 
   .footer__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: var(--header-title-size);
   }
 }
 

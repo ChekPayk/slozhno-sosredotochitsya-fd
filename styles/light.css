@@ -9,11 +9,13 @@
   --background: url(../images/cover-image-light.png);
   --title: rgba(255, 194, 230, 1);
   --accent-color: rgba(255, 141, 203, 1);
-  --text: rgba(53, 52, 48, 1);
-  --paddings: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  --subtitle: rgba(53, 52, 48, 1);
-  --tips: rgba(53, 52, 48, 1);
+  --content-color: rgba(53, 52, 48, 1);
+  --padding-grouth: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  --section-title: rgba(53, 52, 48, 1);
+  --tips-bg-color: rgba(53, 52, 48, 1);
   --header-decorate-color: rgba(53, 52, 48, 1);
+  --header-theme-menu-hover-color: rgba(50, 49, 45, 0.4);
+  --header-theme-menu-color: rgba(53, 52, 48, 1);
 }
 
 .theme-light .rec-label {
@@ -26,11 +28,13 @@
     --background: rgba(53, 52, 48, 1);
     --title: rgba(255, 194, 230, 1);
     --accent-color: rgba(255, 141, 203, 1);
-    --text: rgba(53, 52, 48, 1);
-    --paddings: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-    --subtitle: rgba(53, 52, 48, 1);
-    --tips: rgba(53, 52, 48, 1);
+    --content-color: rgba(53, 52, 48, 1);
+    --padding-grouth: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+    --section-title: rgba(53, 52, 48, 1);
+    --tips-bg-color: rgba(53, 52, 48, 1);
     --header-decorate-color: rgba(53, 52, 48, 1);
+    --header-theme-menu-hover-color: rgba(50, 49, 45, 0.4);
+    --header-theme-menu-color: rgba(53, 52, 48, 1);
   }
 
   .rec-label {
