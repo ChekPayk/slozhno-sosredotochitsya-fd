@@ -12,7 +12,6 @@
   --content-color: rgba(53, 52, 48, 1);
   --padding-grouth: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   --section-title: rgba(53, 52, 48, 1);
-  --tips-bg-color: rgba(53, 52, 48, 1);
   --header-decorate-color: rgba(53, 52, 48, 1);
   --header-theme-menu-hover-color: rgba(50, 49, 45, 0.4);
   --header-theme-menu-color: rgba(53, 52, 48, 1);
@@ -31,7 +30,6 @@
     --content-color: rgba(53, 52, 48, 1);
     --padding-grouth: clamp(10px, 0.0286rem + 2.5445vw, 20px);
     --section-title: rgba(53, 52, 48, 1);
-    --tips-bg-color: rgba(53, 52, 48, 1);
     --header-decorate-color: rgba(53, 52, 48, 1);
     --header-theme-menu-hover-color: rgba(50, 49, 45, 0.4);
     --header-theme-menu-color: rgba(53, 52, 48, 1);

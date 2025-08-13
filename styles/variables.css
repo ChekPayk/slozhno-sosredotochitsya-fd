@@ -12,8 +12,8 @@
     --main-font: "IBM Plex Mono";
     --padding-grouth: clamp(10px, 0.0286rem + 2.5445vw, 20px);
     --section-title: rgba(255, 0, 112, 1);
-    --tips-bg-color: rgba(0, 0, 40, 1);
     --header-theme-menu-color: rgba(255, 0, 112, 1);
     --header-theme-menu-hover-color: rgba(255, 0, 112, 0.4);
-    --header-title-size:  clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --page-title-size:  clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --header-decorate-color: rgba(255, 0, 112, 1);
 }
